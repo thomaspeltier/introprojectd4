@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign up form</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <h1>Magical Mystery Tour 2k18</h1>
+
+    <!-- Formulaire simple qui enverra une requête GET -->
+    <form action="" method="get">
+      <label for="GET-name">Nom :</label>
+      <input id="GET-name" type="text" name="name">
+      <input type="submit" value="ok">
+
+      <label for="POST-name">Prénom :</label>
+      <input id="POST-name" type="text" name="name">
+      <input type="submit" value="ok"> <br>
+
+      <label for="POST-name">Adresse :</label>
+      <input id="POST-name" type="text" name="name">
+      <input type="submit" value="ok">
+    </form>
+
+    <!-- Formulaire avec un fieldset, un legend, et un label -->
+    <form action="" method="post">
+      <fieldset>
+        <legend>Légal</legend>
+        <input type="radio" name="radio" id="radio"> <label for="radio">Je suis majeur</label>
+        <input type="radio" name="radio" id="radio"> <label for="radio">Je suis mineur</label>
+      </fieldset>
+    </form>
+
+    <fieldset>
+    <legend>Ton beatle préferé</legend>
+
+    <div>
+        <input type="checkbox" id="john lennon" name="feature"
+               value="scales" checked />
+        <label for="scales">John Lennon</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="Paul McCartney" name="feature"
+               value="horns" />
+        <label for="horns">Paul McCartney</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="claws" name="feature"
+               value="claws" />
+        <label for="claws"> Ringo Starr</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="claws" name="feature"
+               value="claws" />
+        <label for="claws"> George Harrison</label>
+    </div>
+</fieldset>
+
+
+<fieldset>
+    <legend>Choose trip dates</legend>
+
+    <div>
+        <label for="start">Start</label>
+        <input type="date" id="start" name="trip"
+               value="2018-07-22"
+               min="2018-01-01" max="2018-12-31" />
+    </div>
+
+    <div>
+        <label for="end">End</label>
+        <input type="date" id="end" name="trip"
+               value="2018-07-29"
+               min="2018-01-01" max="2018-12-31"/ >
+    </div>
+
+</fieldset>
+
+<textarea name="textarea"
+rows="5" cols="50">
+Maladies ou allergies à signaler
+</textarea>
+
+
+  </body>
+</html>
